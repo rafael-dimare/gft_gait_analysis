@@ -13,6 +13,9 @@ import pandas as pd
 import numpy as np
 import networkx as nx
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 from scipy.interpolate import interp1d
 
 class GraphModel:
@@ -191,13 +194,16 @@ class GraphSignal:
         self.X = data_matrix  # shape: (n_nodes, n_timesteps)
         self.lambdas, self.U = self.graph.compute_normal_modes()
         self.X_hat = self.compute_gft()
+        self.energy = self.compute_energy()
 
     def compute_gft(self):
         return self.U.T @ self.X
 
     def compute_energy(self):
-        # E(t) = X[:,t].T @ L @ X[:,t] for each t
-        pass
+        X = self.X
+        L = self.graph.norm_laplacian
+        E_t = pd.Series(np.einsum('ij,ji->i', X.T.values, L @ X.values), X.columns)
+        return E_t
 
     def apply_filter(self, mode_indices):
         # Truncate to selected Fourier modes
