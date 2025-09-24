@@ -1,0 +1,130 @@
+{
+    "PELVIS": [
+        378,
+        -362
+    ],
+    "SPINE_NAVAL": [
+        378,
+        -278
+    ],
+    "SPINE_CHEST": [
+        380,
+        -193
+    ],
+    "NECK": [
+        380,
+        -123
+    ],
+    "CLAVICLE_LEFT": [
+        409,
+        -131
+    ],
+    "SHOULDER_LEFT": [
+        462,
+        -145
+    ],
+    "ELBOW_LEFT": [
+        542,
+        -151
+    ],
+    "WRIST_LEFT": [
+        630,
+        -147
+    ],
+    "HAND_LEFT": [
+        655,
+        -148
+    ],
+    "HANDTIP_LEFT": [
+        704,
+        -151
+    ],
+    "THUMB_LEFT": [
+        677,
+        -176
+    ],
+    "CLAVICLE_RIGHT": [
+        349,
+        -130
+    ],
+    "SHOULDER_RIGHT": [
+        296,
+        -145
+    ],
+    "ELBOW_RIGHT": [
+        214,
+        -151
+    ],
+    "WRIST_RIGHT": [
+        135,
+        -152
+    ],
+    "HAND_RIGHT": [
+        105,
+        -153
+    ],
+    "HANDTIP_RIGHT": [
+        53,
+        -153
+    ],
+    "THUMB_RIGHT": [
+        83,
+        -178
+    ],
+    "HIP_LEFT": [
+        409,
+        -361
+    ],
+    "KNEE_LEFT": [
+        418,
+        -516
+    ],
+    "ANKLE_LEFT": [
+        416,
+        -641
+    ],
+    "FOOT_LEFT": [
+        396,
+        -677
+    ],
+    "HIP_RIGHT": [
+        348,
+        -363
+    ],
+    "KNEE_RIGHT": [
+        340,
+        -513
+    ],
+    "ANKLE_RIGHT": [
+        340,
+        -641
+    ],
+    "FOOT_RIGHT": [
+        326,
+        -673
+    ],
+    "HEAD": [
+        381,
+        -92
+    ],
+    "NOSE": [
+        382,
+        -71
+    ],
+    "EYE_LEFT": [
+        394,
+        -53
+    ],
+    "EAR_LEFT": [
+        413,
+        -64
+    ],
+    "EYE_RIGHT": [
+        369,
+        -54
+    ],
+    "EAR_RIGHT": [
+        350,
+        -66
+    ]
+}
