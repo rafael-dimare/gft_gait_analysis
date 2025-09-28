@@ -17,6 +17,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import FuncAnimation
+from matplotlib.colors import Normalize
+from matplotlib import cm
+
 
 from scipy.interpolate import interp1d
 
