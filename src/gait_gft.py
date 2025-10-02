@@ -19,6 +19,8 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.animation import FuncAnimation
 from matplotlib.colors import Normalize
 from matplotlib import cm
+from matplotlib.lines import Line2D
+
 
 
 from scipy.interpolate import interp1d
@@ -194,7 +196,8 @@ class SkeletonPreprocessor:
 
 
 class GraphSignal:
-    def __init__(self, graph: GraphModel, data_matrix: np.ndarray):
+    def __init__(self, graph: GraphModel, data_matrix: np.ndarray, label:str = None):
+        self.label = label
         self.graph = graph
         self.X = data_matrix  # shape: (n_nodes, n_timesteps)
         self.lambdas, self.U = self.graph.compute_normal_modes()
@@ -238,9 +241,9 @@ class GaitTrial:
         self.velocities = self._compute_velocities(self.centered_positions)
 
         # Create GraphSignal objects per axis (3 directions)
-        self.vx = GraphSignal(self.graph, self._get_axis(self.velocities, 'x'))
-        self.vy = GraphSignal(self.graph, self._get_axis(self.velocities, 'y'))
-        self.vz = GraphSignal(self.graph, self._get_axis(self.velocities, 'z'))
+        self.vx = GraphSignal(self.graph, self._get_axis(self.velocities, 'x'), label='x')
+        self.vy = GraphSignal(self.graph, self._get_axis(self.velocities, 'y'), label='y')
+        self.vz = GraphSignal(self.graph, self._get_axis(self.velocities, 'z'), label='z')
 
         self.gft_dict = dict(x=self.vx, y=self.vy, z=self.vz)
 
