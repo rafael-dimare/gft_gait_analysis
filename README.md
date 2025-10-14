@@ -1,4 +1,4 @@
-# Gait Graph Signal Analysis
+# Gait Analysis with Graph Signal Processing
 
 This repository contains part of the code used in my **Master’s Thesis**:
 
@@ -14,10 +14,12 @@ analyzing motion through spectral methods such as the **Graph Fourier Transform 
 
 ## 📂 Repository Structure
 
+
+```text
 .
-├── src/ # Main source code (GraphModel, GraphSignal, GaitTrial, Visualizer, etc.)
-├── notebooks/ # Example notebooks demonstrating object usage and workflow
-├── results/ # Generated plots, animations, and analysis results
+├── src/          # Main source code (GraphModel, GraphSignal, GaitTrial, Visualizer, etc.)
+├── notebooks/    # Example notebooks demonstrating object usage and workflow
+├── results/      # Generated plots, animations, and analysis results
 └── README.md
 
 
