@@ -55,3 +55,4 @@ Once downloaded, adjust your local paths inside the project to point to the data
    ```bash
    git clone https://github.com/rafael-dimare/gft_gait_analysis.git
    cd gft_gait_analysis
+```
