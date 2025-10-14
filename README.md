@@ -14,8 +14,6 @@ analyzing motion through spectral methods such as the **Graph Fourier Transform 
 
 ## 📂 Repository Structure
 
-
-```text
 .
 ├── src/          # Main source code (GraphModel, GraphSignal, GaitTrial, Visualizer, etc.)
 ├── notebooks/    # Example notebooks demonstrating object usage and workflow
