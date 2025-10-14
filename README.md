@@ -42,7 +42,7 @@ It includes:
 The dataset used in this work is **not included** due to size constraints.  
 It can be retrieved from:
 
-> [HDA Human Gait Dataset – Project A2](https://cv.iri.upc.edu/)
+> [Azure Kinect 3D skeleton and foot pressure data for pathological gaits](https://ieee-dataport.org/documents/azure-kinect-3d-skeleton-and-foot-pressure-data-pathological-gaits)
 
 Once downloaded, adjust your local paths inside the project to point to the dataset’s root folder.
 
@@ -52,5 +52,5 @@ Once downloaded, adjust your local paths inside the project to point to the data
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/gait-graph-signal-analysis.git
-   cd gait-graph-signal-analysis
+   git clone https://github.com/rafael-dimare/gft_gait_analysis.git
+   cd gft_gait_analysis
